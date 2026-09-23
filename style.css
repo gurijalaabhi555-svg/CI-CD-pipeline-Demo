@@ -1,18 +1,131 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
-    font-family: Arial;
-    background-color: #f2f2f2;
-    text-align: center;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container {
-    margin-top: 100px;
+    width: 90%;
+    max-width: 1100px;
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
 }
 
 h1 {
-    color: #0073e6;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.subtitle {
+    color: #666;
+    font-size: 18px;
+}
+
+.pipeline {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.stage {
+    width: 190px;
+    padding: 25px 15px;
+    background: #f7f8ff;
+    border-radius: 15px;
+    border: 2px solid #e0e0e0;
+}
+
+.icon {
+    font-size: 40px;
+}
+
+.stage h3 {
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+.stage p {
+    color: #666;
+}
+
+.stage span {
+    color: green;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.arrow {
+    font-size: 35px;
+    margin: 0 12px;
+    color: #667eea;
+}
+
+.status {
+    background: #eefaf0;
+    padding: 15px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+}
+
+.status h2 {
+    margin: 5px;
+}
+
+.status p {
+    color: green;
+    font-weight: bold;
+}
+
+.info {
+    display: flex;
+    justify-content: space-around;
+    background: #f5f5f5;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+}
+
+.info p {
+    color: #555;
 }
 
 button {
-    padding: 12px 25px;
-    font-size: 18px;
+    background: #667eea;
+    color: white;
+    border: none;
+    padding: 14px 30px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #4f63c7;
+}
+
+@media (max-width: 900px) {
+    .pipeline {
+        flex-direction: column;
+    }
+
+    .arrow {
+        transform: rotate(90deg);
+        margin: 10px;
+    }
+
+    .info {
+        flex-direction: column;
+    }
 }
