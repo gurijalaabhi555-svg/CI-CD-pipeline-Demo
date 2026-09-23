@@ -1,21 +1,86 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Jenkins CI/CD Demo</title>
+    <title>Jenkins CI/CD Pipeline</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<div class="container">
-    <h1>Jenkins CI/CD Pipeline</h1>
+    <div class="container">
 
-    <h2>Welcome Students!</h2>
+        <h1>Jenkins CI/CD Pipeline</h1>
+        <p class="subtitle">Automated Software Delivery System</p>
 
-    <p>This web application was deployed automatically using Jenkins.</p>
+        <div class="pipeline">
 
-    <button>CI/CD Demo</button>
-</div>
+            <div class="stage">
+                <div class="icon">💻</div>
+                <h3>Code</h3>
+                <p>Source Code</p>
+                <span>✓ Completed</span>
+            </div>
+
+            <div class="arrow">→</div>
+
+            <div class="stage">
+                <div class="icon">🔨</div>
+                <h3>Build</h3>
+                <p>Jenkins Build</p>
+                <span>✓ Completed</span>
+            </div>
+
+            <div class="arrow">→</div>
+
+            <div class="stage">
+                <div class="icon">🧪</div>
+                <h3>Test</h3>
+                <p>Automated Tests</p>
+                <span>✓ Passed</span>
+            </div>
+
+            <div class="arrow">→</div>
+
+            <div class="stage">
+                <div class="icon">🚀</div>
+                <h3>Deploy</h3>
+                <p>Production</p>
+                <span>✓ Deployed</span>
+            </div>
+
+        </div>
+
+        <div class="status">
+            <h2>Pipeline Status</h2>
+            <p>🟢 All stages completed successfully</p>
+        </div>
+
+        <div class="info">
+            <div>
+                <b>Project</b>
+                <p>Jenkins CI/CD Demo</p>
+            </div>
+
+            <div>
+                <b>Build</b>
+                <p>#25</p>
+            </div>
+
+            <div>
+                <b>Status</b>
+                <p>Success</p>
+            </div>
+        </div>
+
+        <button onclick="runPipeline()">Run CI/CD Pipeline</button>
+
+    </div>
+
+    <script>
+        function runPipeline() {
+            alert("CI/CD Pipeline Started Successfully!");
+        }
+    </script>
 
 </body>
 </html>
